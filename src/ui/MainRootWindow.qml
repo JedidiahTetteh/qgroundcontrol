@@ -166,7 +166,7 @@ ApplicationWindow {
     }
 
     function showSettingsTool() {
-        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/resources/soko.png")
+        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/resources/soko.svg")
     }
 
     //-------------------------------------------------------------------------
