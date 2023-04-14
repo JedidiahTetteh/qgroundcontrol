@@ -33,6 +33,10 @@ Rectangle {
     property bool   _communicationLost: _activeVehicle ? _activeVehicle.vehicleLinkManager.communicationLost : false
     property color  _mainStatusBGColor: qgcPal.brandingPurple
 
+    property bool   _armed:             _activeVehicle ? _activeVehicle.armed : false
+    property bool   _healthAndArmingChecksSupported: _activeVehicle ? _activeVehicle.healthAndArmingCheckReport.supported : false
+    property bool _takeoff: _activeVehicle ? _activeVehicle.takeoffVehicleSupported : false
+
     QGCPalette { id: qgcPal }
 
     /// Bottom single pixel divider
@@ -216,4 +220,54 @@ Rectangle {
             onClicked:      largeProgressBar._userHide = true
         }
     }
+
+    RowLayout{
+            id: takeOffAndLand
+            spacing: 10
+            anchors.right: parent.right
+            anchors.verticalCenter: parent.verticalCenter
+
+
+            QGCButton{
+                id: arm
+                text: qsTr("Arm")
+                onClicked: {
+                    mainWindow.armVehicleRequest()
+                }
+            }
+
+            QGCButton{
+                id: takeOff
+                text: qsTr("TakeOff")
+                onClicked: {
+                    mainWindow.takeOffRequest()
+                }
+            }
+
+            QGCButton{
+                id: land
+                text: qsTr("Land")
+
+                onClicked:{
+                    mainWindow.landRequest()
+                }
+            }
+            QGCButton{
+                id: disarm
+                text: qsTr("Disarm")
+                onClicked: {
+                    mainWindow.disarmVehicleRequest()
+                }
+            }
+
+            QGCButton {
+                id:                 websiteButton
+                text:               qsTr("SokoAerial")
+                onClicked:
+                {
+                    Qt.openUrlExternally("http://www.sokoaerial.com")
+                }
+            }
+
+        }
 }

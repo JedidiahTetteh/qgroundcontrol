@@ -99,6 +99,8 @@ ApplicationWindow {
 
     signal armVehicleRequest
     signal forceArmVehicleRequest
+    signal takeOffRequest
+    signal landRequest
     signal disarmVehicleRequest
     signal vtolTransitionToFwdFlightRequest
     signal vtolTransitionToMRFlightRequest

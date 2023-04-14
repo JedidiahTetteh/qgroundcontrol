@@ -314,6 +314,8 @@ Item {
         target:                             mainWindow
         function onArmVehicleRequest() { armVehicleRequest() }
         function onForceArmVehicleRequest() { forceArmVehicleRequest() }
+        function onTakeOffRequest() { takeOffRequest() }
+        function onLandRequest() { landRequest() }
         function onDisarmVehicleRequest() { disarmVehicleRequest() }
         function onVtolTransitionToFwdFlightRequest() { vtolTransitionToFwdFlightRequest() }
         function onVtolTransitionToMRFlightRequest() { vtolTransitionToMRFlightRequest() }
@@ -326,6 +328,12 @@ Item {
     function forceArmVehicleRequest() {
         confirmAction(actionForceArm)
     }
+    function takeOffRequest() {
+            confirmAction(actionTakeoff)
+        }
+    function landRequest() {
+            confirmAction(actionLand)
+        }
 
     function disarmVehicleRequest() {
         if (showEmergenyStop) {
