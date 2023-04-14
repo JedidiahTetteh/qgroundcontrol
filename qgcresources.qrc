@@ -58,6 +58,7 @@
         <file>resources/icons/qgroundcontrol.ico</file>
         <file>resources/soko.png</file>
         <file>resources/soko.svg</file>
+        <file>resources/soko.jpg</file>
     </qresource>
     <qresource prefix="/res/firmware">
         <file alias="3drradio.png">resources/firmware/3drradio.png</file>
