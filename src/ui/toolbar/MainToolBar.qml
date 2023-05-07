@@ -245,6 +245,21 @@ Rectangle {
             }
 
             QGCButton{
+                id: fixedWing
+                text: qsTr("Fixed Wing Mode")
+                onClicked: {
+                    mainWindow.vtolTransitionToFwdFlightRequest()
+                }
+            }
+            QGCButton{
+                id: multicopter
+                text: qsTr("Multi-Rotor Mode")
+                onClicked: {
+                    mainWindow.vtolTransitionToMRFlightRequest()
+                }
+            }
+
+            QGCButton{
                 id: land
                 text: qsTr("Land")
 
