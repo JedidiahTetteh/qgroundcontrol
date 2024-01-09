@@ -164,8 +164,9 @@ ApplicationWindow {
     }
 
     function showSettingsTool() {
-        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/QGCLogoWhite")
+        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/resources/altair.jpeg")
     }
+
 
     //-------------------------------------------------------------------------
     //-- Global simple message dialog
@@ -333,7 +334,7 @@ ApplicationWindow {
                         height:             toolSelectDialog._toolButtonHeight
                         Layout.fillWidth:   true
                         text:               qsTr("Application Settings")
-                        imageResource:      "/res/QGCLogoFull"
+                        imageResource:      "/res/resources/altair.png"
                         imageColor:         "transparent"
                         visible:            !QGroundControl.corePlugin.options.combineSettingsAndSetup
                         onClicked: {

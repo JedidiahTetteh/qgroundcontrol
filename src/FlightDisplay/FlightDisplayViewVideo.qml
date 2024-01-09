@@ -41,7 +41,7 @@ Item {
         Image {
             id:             noVideo
             anchors.fill:   parent
-            source:         "/res/resources/soko.jpg"
+            source:         "/res/NoVideoBackground.jpg"
             fillMode:       Image.PreserveAspectCrop
             visible:        !(QGroundControl.videoManager.decoding)
 
