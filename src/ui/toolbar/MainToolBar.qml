@@ -73,7 +73,7 @@ Rectangle {
         QGCToolBarButton {
             id:                     currentButton
             Layout.preferredHeight: viewButtonRow.height
-            icon.source:            "/res/resources/altair.png"
+            icon.source:            "/resources/altair.png"
             logo:                   true
             onClicked:              mainWindow.showToolSelectDialog()
         }

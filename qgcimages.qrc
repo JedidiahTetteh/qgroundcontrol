@@ -206,9 +206,11 @@
         <file alias="Yield.svg">src/ui/toolbar/Images/Yield.svg</file>
         <file alias="ZoomMinus.svg">src/FlightMap/Images/ZoomMinus.svg</file>
         <file alias="ZoomPlus.svg">src/FlightMap/Images/ZoomPlus.svg</file>
-        <file>resources/altair.png</file>
+        <file>resources/altair_uav.jpg</file>
     </qresource>
     <qresource prefix="/">
-        <file>../altair.png</file>
+        <file>resources/altair.png</file>
+        <file>resources/kasoa.jpg</file>
+        <file>resources/icons/altair.ico</file>
     </qresource>
 </RCC>

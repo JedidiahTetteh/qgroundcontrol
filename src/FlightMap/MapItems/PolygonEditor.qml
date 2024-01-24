@@ -320,7 +320,7 @@ Item {
         id: mobileSegmentComponent
 
         MapPolyline {
-            line.color: "green"
+            line.color: "red"
             line.width: 3
             visible:    false
         }
@@ -339,7 +339,7 @@ Item {
                 id:     rect
                 width:  ScreenTools.defaultFontPixelHeight
                 height: width
-                color:  "green"
+                color:  "red"
             }
         }
     }
@@ -349,7 +349,7 @@ Item {
         id: nextPointComponent
 
         MapPolyline {
-            line.color: "green"
+            line.color: "red"
             line.width: 3
         }
     }
